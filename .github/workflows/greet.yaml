@@ -4,6 +4,6 @@ jobs:
   example:
     runs-on: ubuntu-latest
     steps:
-      - uses: Ch4s3r/greeter-action@1.0.0
+      - uses: Ch4s3r/greeter-action@2.0.0
         with:
           who-to-greet: "GitHub Actions"
