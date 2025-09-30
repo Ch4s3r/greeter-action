@@ -1,10 +1,12 @@
-name: "Hello World Action"
-description: "A simple action that prints a message"
+name: "Greeter Action"
+description: "Print a greeting message"
 inputs:
   who-to-greet:
     description: "Who to greet"
     required: false
     default: "World"
 runs:
-  using: "node12"
-  main: "index.js"
+  using: "composite"
+  steps:
+    - run: echo "Hello ${{ inputs.who-to-greet }}!"
+      shell: bash
