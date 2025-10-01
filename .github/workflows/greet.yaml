@@ -2,6 +2,6 @@ on:
   push:
 jobs:
   example:
-    uses: Ch4s3r/greeter-action/.github/workflows/greeter@main
+    uses: Ch4s3r/greeter-action/.github/workflows/greeter.yaml@main
     with:
       who-to-greet: "GitHub Actions"
