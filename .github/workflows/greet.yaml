@@ -2,8 +2,6 @@ on:
   push:
 jobs:
   example:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Ch4s3r/greeter-action/.github/actions/greeter@1.0.0
-        with:
-          who-to-greet: "GitHub Actions"
+    uses: Ch4s3r/greeter-action/.github/workflows/greeter@main
+    with:
+      who-to-greet: "GitHub Actions"
